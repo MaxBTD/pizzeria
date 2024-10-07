@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import PizzaMenu from './pizzaMenu';
+import pol from './img/pol.png';
+
+const pizzas = [{nr: 0, name: "Pizza pół na pół", img: {pol}, desc: "Wybierz 2 połówki pizzy w jednej i rozkoszuj się podwójnym smakiem. Cena pojawi się po skompletowaniu zamówienia. Wybierz rozmiar, kliknij w cenę i do dzieła!"},
+                {nr: 1, name: "Margherita", img: "margherita.webp", desc: "ciasto, sos pomidorowy, ser, oregano"}
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PizzaMenu pizza={pizzas[0]}/>
+      <PizzaMenu pizza={pizzas[1]}/>
     </div>
   );
 }
