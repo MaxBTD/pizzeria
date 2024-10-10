@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-#pizzas{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #header{
   height: 75px;
   width: 100%;
@@ -14,4 +9,20 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 25px;
   color:white;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+#pizzasList{
+  box-shadow: -1px 0px 10px #00000033;
+  width: 1230px;
+  margin: 10px 335px;
+  background-color: white;
+  border-radius: 2%;
+}
+
+#pizzasList h1{
+  margin-bottom: -25px;
+  color: #d3e8f8;
+  text-shadow: 3px 2px 0px black;
 }

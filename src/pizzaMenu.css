@@ -17,3 +17,26 @@ div {float: left;}
     padding: 10px 40px 10px 0px;
     border-radius: 4%;
 }
+
+#pizzaCell:hover{
+    scale: 1.2;
+}
+
+button{
+    background-image: url("img/shopping.png");
+    background-size:cover;
+    width: 35px;
+    height: 35px;
+    float:left;
+}
+
+#buyButton p{
+    display: inline;
+    margin-left: 10px;
+    color:darkgreen;
+    font-weight: bold;
+}
+
+#buyButton button{
+    margin-top:-6px;
+}
