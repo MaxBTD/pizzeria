@@ -1,6 +1,7 @@
 
 import './App.css';
 import PizzaMenu from './pizzaMenu';
+import { useState, useTransition } from 'react';
 
 const pizzas = [{nr: 0, name: "Pizza pół na pół",price: 25, desc: "Wybierz 2 połówki pizzy w jednej i rozkoszuj się podwójnym smakiem. Cena pojawi się po skompletowaniu zamówienia. Wybierz rozmiar, kliknij w cenę i do dzieła!"},
                 {nr: 1, name: "Margherita",price: 28, desc: "ciasto, sos pomidorowy, ser, oregano"},
@@ -11,10 +12,12 @@ const pizzas = [{nr: 0, name: "Pizza pół na pół",price: 25, desc: "Wybierz 2
 ];
 
 function App() {
+  const [order, changeOrder] = useState([""]);
   return (
     <div id="App">
         <div id="header">
           <h1>MAMA MIA PIZZA PIE</h1>
+          <p id="finalPrice"></p>
         </div>
         <div id="pizzasList">
           <div></div>
@@ -32,6 +35,7 @@ function App() {
             <PizzaMenu pizza={pizzas[4]}/>
             <PizzaMenu pizza={pizzas[5]}/>
           </div>
+          <p id="orderP"></p>
         </div>
     </div>
   );
